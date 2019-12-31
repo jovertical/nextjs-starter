@@ -2,6 +2,12 @@
 
 A Minimal Next.js Starter kit
 
+## Features
+
+- [x] Theming (Typography, Layouts etc.)
+- [ ] CI / CD Pipeline (Deploy to zeit.co)
+- [ ] Authentication
+
 ## Quick Start
 
 1. Run `yarn install`.
