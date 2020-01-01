@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "repository": "https://github.com/palonponjovertlota/nextjs-starter.git",
   "author": "Jovert Palonpon <palonponjovertlota@gmail.com>",
+  "keywords": [
+    "typescript",
+    "react",
+    "next.js",
+    "starterkit"
+  ],
   "license": "MIT",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "classnames": "^2.2.6",
     "next": "^9.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/next": "^9.0.0",
     "@types/node": "^13.1.1",
     "@types/react": "^16.9.17",

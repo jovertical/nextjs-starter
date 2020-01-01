@@ -1,23 +1,38 @@
 import React from 'react'
-import Link from 'next/link'
+import cx from 'classnames'
+import Link from '@components/Link'
 
-const Header: React.FC<{}> = () => (
-  <header>
-    <nav className="tw-flex tw-justify-between tw-px-10 tw-py-6 tw-bg-gray-300 tw-border-t-2 tw-border-gray-600">
-      <Link href="/">
-        <a className="tw-text-gray-700">Next.js</a>
-      </Link>
+const Header: React.FC<{}> = () => {
+  const linkClassName =
+    'tw-px-1 tw-pb-1 tw-text-white tw-border-b-2 tw-border-blue hover:tw-border-white'
 
-      <div>
-        <a href="#" className="tw-px-4 tw-text-gray-700 hover:tw-text-gray-900">
-          Login
-        </a>
-        <a href="#" className="tw-px-4 tw-text-gray-700 hover:tw-text-gray-900">
-          Sign Up
-        </a>
-      </div>
-    </nav>
-  </header>
-)
+  return (
+    <header>
+      <nav className="tw-flex tw-items-center tw-justify-between tw-px-10 tw-py-6 tw-bg-blue">
+        <Link variant="custom" href="/" className="tw-text-white tw-pb-1">
+          Next.js
+        </Link>
+
+        <div>
+          <Link
+            variant="custom"
+            href="/auth/signin"
+            className={cx('tw-mx-2', linkClassName)}
+          >
+            Login
+          </Link>
+
+          <Link
+            variant="custom"
+            href="/auth/signup"
+            className={cx('tw-mx-2', linkClassName)}
+          >
+            Sign up
+          </Link>
+        </div>
+      </nav>
+    </header>
+  )
+}
 
 export default Header

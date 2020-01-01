@@ -17,7 +17,7 @@ class App extends Next {
 
           body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #fff;
+            background-color: #edf2f7;
           }
         `}</style>
 
