@@ -15,22 +15,17 @@ const Button: React.FC<Props> = ({
   iconLeft,
   children,
   className = '',
-  disabled = false,
   ...other
 }) => {
   return (
     <button
       type="button"
       className={cx(
-        'tw-relative tw-inline-block tw-rounded-sm tw-h-10 tw-px-5 tw-tracking-wide',
+        'tw-relative tw-inline-block tw-rounded tw-h-10 tw-px-5 tw-tracking-wide',
         {
           'tw-bg-blue hover:tw-bg-blue-darker tw-text-white':
-            !disabled && variant === 'primary',
-          'tw-bg-white tw-shadow hover:tw-bg-gray-100':
-            !disabled && variant === 'secondary'
-        },
-        {
-          'tw-bg-gray-500 tw-cursor-not-allowed': disabled
+            variant === 'primary',
+          'tw-bg-white tw-shadow hover:tw-bg-gray-100': variant === 'secondary'
         },
         className
       )}

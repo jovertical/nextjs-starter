@@ -26,8 +26,7 @@ const RawLink: React.FC<Props> = forwardRef(
         className={cx(
           'tw-cursor-pointer',
           {
-            'hover:tw-underline': variant === 'default',
-            'hover:tw-text-blue': variant === 'primary',
+            'tw-text-blue hover:tw-underline': variant === 'primary',
             'tw-text-white hover:tw-underline': variant === 'secondary'
           },
           className
