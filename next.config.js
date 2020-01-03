@@ -18,6 +18,15 @@ const config = {
 module.exports = withCss(withPurgeCss({
   purgeCssEnabled: ({ dev, isServer }) => (!dev && !isServer),
   purgeCss: {
+    whitelist: [
+      'bar',
+      'peg',
+      'spinner',
+      'spinner-icon',
+    ],
+    whitelistPatterns: [
+      /nprogress/,
+    ],
     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
   ...config
