@@ -4,6 +4,7 @@ import { Formik, Form, FormikHelpers } from 'formik'
 import * as Yup from 'yup'
 import Button from '@components/Button'
 import Input from '@components/Form/Input'
+import PasswordInput from '@components/Form/PasswordInput'
 import Layout from '@components/Layout'
 import Link from '@components/Link'
 import Text from '@components/Text'
@@ -61,8 +62,7 @@ const Signin: NextPage<{}> = () => {
               </div>
 
               <div className="tw-mb-5">
-                <Input
-                  type="password"
+                <PasswordInput
                   name="password"
                   value={values.password}
                   placeholder="Your Password"
