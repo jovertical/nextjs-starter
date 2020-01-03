@@ -21,13 +21,13 @@ const Signin: NextPage<{}> = () => {
   ): Promise<void> => {
     const { status, body } = await API.post('/auth/signin', values)
 
+    formik.setSubmitting(false)
+
     switch (status) {
       case 422:
         formik.setErrors(body)
         break
     }
-
-    formik.setSubmitting(false)
   }
 
   return (
@@ -49,7 +49,7 @@ const Signin: NextPage<{}> = () => {
           onSubmit={handleSubmit}
         >
           {({ values, isSubmitting }): React.ReactElement => (
-            <Form className="tw-w-84">
+            <Form className="tw-w-full lg:tw-w-84">
               <div className="tw-mb-5">
                 <Input
                   type="email"
