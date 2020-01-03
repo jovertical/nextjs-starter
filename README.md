@@ -8,6 +8,15 @@ A Minimal Next.js Starter kit
 - [ ] CI / CD Pipeline (Deploy to zeit.co)
 - [ ] Authentication
 
+## Resources
+
+- JavaScript Superset: [Typescript](https://github.com/Microsoft/TypeScript)
+- JavaScript Framework: [React.js](https://github.com/facebook/react) + [Next.js](https://github.com/zeit/next.js/)
+- Form Validation Library: [Formik](https://github.com/jaredpalmer/formik) + [Yup](https://github.com/jquense/yup)
+- CSS Framework: [Tailwind CSS](https://github.com/tailwindcss/tailwindcss)
+- SVG icons: [Unicons](https://github.com/iconscout/unicons)
+- Page Loader: [NProgress](https://github.com/rstacruz/nprogress)
+
 ## Quick Start
 
 1. Run `yarn install`.
