@@ -36,8 +36,8 @@ const Signin: NextPage<{}> = () => {
 
   return (
     <Layout>
-      <div className="tw-inline-flex tw-flex-col tw-items-center tw-justify-center tw-p-8 tw-rounded tw-bg-white tw-shadow-md">
-        <Text className="tw-mb-8">Create an Account</Text>
+      <div className="inline-flex flex-col items-center justify-center p-8 rounded bg-white shadow-md">
+        <Text className="mb-8">Create an Account</Text>
 
         <Formik
           initialValues={{
@@ -60,59 +60,59 @@ const Signin: NextPage<{}> = () => {
           onSubmit={handleSubmit}
         >
           {({ values, isSubmitting }): React.ReactElement => (
-            <Form className="tw-w-full lg:tw-w-84">
-              <div className="tw-mb-5">
+            <Form className="w-full lg:w-84">
+              <div className="mb-5">
                 <Input
                   type="text"
                   name="name"
                   value={values.name}
                   placeholder="Your Name"
-                  className="tw-w-full"
+                  className="w-full"
                 />
               </div>
 
-              <div className="tw-mb-5">
+              <div className="mb-5">
                 <Input
                   type="email"
                   name="email"
                   value={values.email}
                   placeholder="Your Email address"
-                  className="tw-w-full"
+                  className="w-full"
                 />
               </div>
 
-              <div className="tw-mb-5">
+              <div className="mb-5">
                 <PasswordInput
                   name="password"
                   value={values.password}
                   placeholder="Your Password"
-                  className="tw-w-full"
+                  className="w-full"
                 />
               </div>
 
-              <div className="tw-mb-5">
+              <div className="mb-5">
                 <PasswordInput
                   name="password_confirmation"
                   value={values.password_confirmation}
                   placeholder="Re-type your Password"
-                  className="tw-w-full"
+                  className="w-full"
                 />
               </div>
 
-              <div className="tw-mb-5">
+              <div className="mb-5">
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="tw-w-full"
+                  className="w-full"
                 >
                   Sign up
                 </Button>
               </div>
 
-              <div className="tw-border tw-mb-5" />
+              <div className="border mb-5" />
 
-              <div className="tw-text-center">
-                <span className="tw-mr-1">Already have an Account?</span>
+              <div className="text-center">
+                <span className="mr-1">Already have an Account?</span>
                 <Link href="/auth/signin" variant="primary">
                   Login
                 </Link>

@@ -6,7 +6,7 @@ const EyeSlash: React.FC<React.SVGProps<SVGSVGElement>> = ({
 }) => {
   return (
     <svg
-      className={`tw-fill-current ${className}`}
+      className={`fill-current ${className}`}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

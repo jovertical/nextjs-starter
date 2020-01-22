@@ -12,7 +12,7 @@ export interface Props extends React.InputHTMLAttributes<{}> {
 
 const Error: React.FC<{}> = ({ children }): React.ReactElement => {
   return (
-    <Text variant="sub" className="tw-text-red-600">
+    <Text variant="sub" className="text-red-600">
       {children}
     </Text>
   )
@@ -24,17 +24,16 @@ const Input: React.FC<Props> = React.memo(
 
     return (
       <>
-        <div className="tw-flex tw-relative">
+        <div className="flex relative">
           <input
             className={cx(
-              'tw-outline-none tw-p-2 tw-rounded tw-placeholder-gray-700',
+              'outline-none p-2 rounded placeholder-gray-700',
               {
-                'tw-border-2 focus:tw-border-blue':
+                'border-2 focus:border-blue':
                   !Boolean(meta.error) || !meta.touched
               },
               {
-                'tw-border-2 tw-border-red-600':
-                  Boolean(meta.error) && meta.touched
+                'border-2 border-red-600': Boolean(meta.error) && meta.touched
               },
               className
             )}
@@ -42,7 +41,7 @@ const Input: React.FC<Props> = React.memo(
             {...other}
           />
           {rightAction && (
-            <span className="tw-flex tw-items-center tw-h-full tw-absolute tw-top-0 tw-right-0 tw-mr-3">
+            <span className="flex items-center h-full absolute top-0 right-0 mr-3">
               {rightAction}
             </span>
           )}

@@ -21,18 +21,17 @@ const Button: React.FC<Props> = ({
     <button
       type="button"
       className={cx(
-        'tw-relative tw-inline-block tw-rounded tw-h-10 tw-px-5 tw-tracking-wide',
+        'relative inline-block rounded h-10 px-5 tracking-wide',
         {
-          'tw-bg-blue hover:tw-bg-blue-darker tw-text-white':
-            variant === 'primary',
-          'tw-bg-white tw-shadow hover:tw-bg-gray-100': variant === 'secondary'
+          'bg-blue hover:bg-blue-darker text-white': variant === 'primary',
+          'bg-white shadow hover:bg-gray-100': variant === 'secondary'
         },
         className
       )}
       {...other}
     >
       {iconLeft && (
-        <span className="tw-absolute tw-top-0 tw-left-0 tw-flex tw-items-center tw-w-12 tw-h-12 tw-ml-3">
+        <span className="absolute top-0 left-0 flex items-center w-12 h-12 ml-3">
           {iconLeft}
         </span>
       )}

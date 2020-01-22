@@ -8,12 +8,12 @@ const Header: React.FC<{}> = () => {
   const { authenticated } = useContext(AuthContext)
 
   const linkClassName =
-    'tw-px-1 tw-pb-1 tw-text-white tw-border-b-2 tw-border-blue hover:tw-border-white'
+    'px-1 pb-1 text-white border-b-2 border-blue hover:border-white'
 
   return (
     <header>
-      <nav className="tw-flex tw-items-center tw-justify-between tw-px-10 tw-py-6 tw-bg-blue">
-        <Link variant="custom" href="/" className="tw-text-white tw-pb-1">
+      <nav className="flex items-center justify-between px-10 py-6 bg-blue">
+        <Link variant="custom" href="/" className="text-white pb-1">
           Next.js
         </Link>
 
@@ -22,7 +22,7 @@ const Header: React.FC<{}> = () => {
             <Link
               variant="custom"
               href="#"
-              className={cx('tw-mx-2', linkClassName)}
+              className={cx('mx-2', linkClassName)}
               onClick={(): void => signout()}
             >
               Logout
@@ -32,7 +32,7 @@ const Header: React.FC<{}> = () => {
               <Link
                 variant="custom"
                 href="/auth/signin"
-                className={cx('tw-mx-2', linkClassName)}
+                className={cx('mx-2', linkClassName)}
               >
                 Login
               </Link>
@@ -40,7 +40,7 @@ const Header: React.FC<{}> = () => {
               <Link
                 variant="custom"
                 href="/auth/signup"
-                className={cx('tw-mx-2', linkClassName)}
+                className={cx('mx-2', linkClassName)}
               >
                 Sign up
               </Link>

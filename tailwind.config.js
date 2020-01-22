@@ -1,7 +1,6 @@
 const theme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  prefix: 'tw-',
   theme: {
     extend: {
       colors: {
