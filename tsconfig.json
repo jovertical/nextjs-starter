@@ -5,6 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["components/*"],
+      "@contexts/*": ["contexts/*"],
+      "@hocs/*": ["hocs/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"]

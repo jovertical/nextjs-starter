@@ -8,6 +8,8 @@ const config = {
   },
   webpack(config) {
     config.resolve.alias['@components'] = path.join(__dirname, 'components')
+    config.resolve.alias['@contexts'] = path.join(__dirname, 'contexts')
+    config.resolve.alias['@hocs'] = path.join(__dirname, 'hocs')
     config.resolve.alias['@pages'] = path.join(__dirname, 'pages')
     config.resolve.alias['@styles'] = path.join(__dirname, 'styles')
     config.resolve.alias['@utils'] = path.join(__dirname, 'utils')

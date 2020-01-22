@@ -5,8 +5,7 @@ A Minimal Next.js Starter kit
 ## Features
 
 - [x] Theming (Typography, Layouts etc.)
-- [ ] CI / CD Pipeline (Deploy to zeit.co)
-- [ ] Authentication
+- [ ] Authentication (Login & Sign up)
 
 ## Resources
 
