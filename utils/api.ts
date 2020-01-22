@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import fetch from 'isomorphic-unfetch'
 
 interface ApiResponse {
